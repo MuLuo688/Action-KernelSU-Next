@@ -79,9 +79,9 @@ jobs:
          repo sync
          rm kernel_platform/common/android/abi_gki_protected_exports_* || echo "No protected exports!"
          rm kernel_platform/msm-kernel/android/abi_gki_protected_exports_* || echo "No protected exports!"
-         sed -i 's/ //g' kernel_platform/common/scripts/setlocalversion
-         sed -i 's/ //g' kernel_platform/msm-kernel/scripts/setlocalversion
-         sed -i 's/ //g' kernel_platform/external/dtc/scripts/setlocalversion
+         sed -i 's/ -MuLuo🤓//g' kernel_platform/common/scripts/setlocalversion
+         sed -i 's/ -MuLuo🤓//g' kernel_platform/msm-kernel/scripts/setlocalversion
+         sed -i 's/ -MuLuo🤓//g' kernel_platform/external/dtc/scripts/setlocalversion
 
       - name: Set up KernelSU Next
         if: github.event.inputs.KSUNEXT_ENABLED == 'true'
